@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-_mx-uly2w536uxn&jh3(1cnkiunt&1sl-t1d5me++nj0&m169$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['LearningLog.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -35,10 +35,10 @@ INSTALLED_APPS = [
     # My_apps
     'learning_logs',
     'users',
-    
+
     # Third party apps.
     'bootstrap4',
-    
+
     # Default django apps.
     'django.contrib.admin',
     'django.contrib.auth',
@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -135,4 +135,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # My settings
 LOGIN_URL = 'users:login'
-
